@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Task 11-12 JS </title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slider.js"></script>
+	<script type="text/javascript" src="js/task_11-12.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/templ.my.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 >Стадионы мира</h1>
+        <div class="carousel-arrow-left"><span>Left</span>  </div>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <li class="carousel-element"><img src="img/img1.jpg" alt="dog" /> <p class="header">Барселона</p></li>
+                <li class="carousel-element"><img src="img/img2.jpg" alt="dog" /> <p class="header">Мюнхен</p></li>
+                <li class="carousel-element"><img src="img/img3.jpg" alt="dog" /> <p class="header">Донецк</p></li>
+                <li class="carousel-element"><img src="img/img4.jpg" alt="dog" /> <p class="header">Гамбург</p></li>
+                <li class="carousel-element"><img src="img/img5.jpg" alt="dog" /> <p class="header">Женева</p></li>
+                <li class="carousel-element"><img src="img/img6.jpg" alt="dog" /> <p class="header">Днепр</p></li>
+                <li class="carousel-element"><img src="img/img7.jpg" alt="dog" /> <p class="header">Йоханесбург</p></li>
+                <li class="carousel-element"><img src="img/img8.jpg" alt="dog" /> <p class="header">Дурбан</p></li>
+                <li class="carousel-element"><img src="img/img9.jpg" alt="dog" /> <p class="header">Валенсия</p></li>
+            </ul>
+        </div>
+        <div class="carousel-arrow-right"><span>Right</span>  </div>
+    </div>
+
+
+    <!--=======First html-task with help of template============-->
+    <div class="wrap">
+			<script type="text/template" id="about">
+			<div class="about_me">
+			<h2> <%= hh %> </h2>
+            <div class="main_photo">
+			<img src=<%= img %> alt="My photo">
+            </div>
+            <p class="student"><%=student%></p>
+            </div>
+			<hr>
+
+            <div class="points">
+			<p ><%=listH%></p>
+			<ul >
+				<% for(var i=0;i<3;i++){ %>
+					<li class="list"><%= listItem[i] %></li>
+					<%};%>
+			</ul>
+            </div>
+
+			<hr>
+			<div class="contacts">
+			<p><%=contactTel%><br> <%=tel%></p>
+            <p><%=profileVk%>  <br><a href="<%=hrefVk%>" >vk.com</a></p>
+            </div>
+            <hr>
+
+            <p class="feedback"><%=feedback%><br><%=feedText%></p>
+
+
+			</script>
+		</div>
+
+</body>
+</html>
